@@ -1,8 +1,8 @@
 LIFE OS - Productivity Intelligence Dashboard
 A mordern productivity tracking dashboard designed to help users monitor daily activities, focus time, goals, and overall productivity 
 ## Live Demo
-[View Life OS Live
-Demo](https: //siva-ai-dev.github.io/life-os-productivity-dashboard/)
+[View Live
+Demo](https://siva-ai-dev.github.io/life-os-productivity-dashboard/)
 ## Screenshots
 ! [Life OS Dashboard] (screenshots/life-os-dashboard.png)
 ## Features
