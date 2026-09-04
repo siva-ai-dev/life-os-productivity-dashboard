@@ -1,0 +1,554 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+    background: #f5f6fb;
+    color: #171b2e;
+}
+
+.app {
+    min-height: 100vh;
+    display: flex;
+}
+
+/* ================= SIDEBAR ================= */
+
+.sidebar {
+    width: 294px;
+    min-height: 100vh;
+    background: #101827;
+    color: white;
+    padding: 26px 18px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 14px;
+    margin-bottom: 56px;
+}
+
+.logo-box {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: #7658ee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.logo-text {
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: -0.8px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nav-item {
+    height: 55px;
+    border-radius: 12px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    color: #a5acbc;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-item.active {
+    background: #22294d;
+    color: white;
+}
+
+.nav-icon {
+    width: 18px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.dark-mode {
+    margin-top: auto;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    gap: 12px;
+    color: #aeb5c5;
+    font-size: 16px;
+}
+
+
+/* ================= MAIN ================= */
+
+.main {
+    flex: 1;
+    min-width: 0;
+    padding: 0 42px 40px;
+}
+
+.topbar {
+    height: 90px;
+    border-bottom: 1px solid #e2e4eb;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.notification {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #e1e3e9;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-right: 13px;
+}
+
+.avatar {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background: #8155ed;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.profile-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #151a2c;
+}
+
+.profile-role {
+    margin-top: 4px;
+    font-size: 13px;
+    color: #737b8e;
+}
+
+
+/* ================= HEADER ================= */
+
+.welcome {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.date {
+    color: #6759ee;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.welcome h1 {
+    font-size: 39px;
+    line-height: 1.15;
+    font-weight: 700;
+    letter-spacing: -1.2px;
+    color: #171b2e;
+}
+
+.subtitle {
+    margin-top: 8px;
+    font-size: 17px;
+    color: #70788c;
+}
+
+.add-btn {
+    margin-top: 27px;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 22px;
+    background: #7659ed;
+    color: white;
+    font-size: 15px;
+    font-weight: 650;
+    cursor: pointer;
+    box-shadow: 0 7px 18px rgba(118, 89, 237, 0.22);
+}
+
+.add-btn:hover {
+    background: #684be4;
+}
+
+
+/* ================= STAT CARDS ================= */
+
+.stats {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 21px;
+}
+
+.stat-card {
+    min-height: 136px;
+    background: white;
+    border: 1px solid #e2e4eb;
+    border-radius: 16px;
+    padding: 25px 23px;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.stat-icon {
+    width: 54px;
+    height: 54px;
+    flex-shrink: 0;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.purple-icon {
+    background: #eee8ff;
+}
+
+.blue-icon {
+    background: #dcecff;
+}
+
+.green-icon {
+    background: #dcf8e8;
+}
+
+.orange-icon {
+    background: #ffecd2;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #737b8d;
+    margin-bottom: 5px;
+}
+
+.stat-value {
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 700;
+    color: #171c2e;
+}
+
+.stat-bottom {
+    margin-top: 9px;
+    font-size: 13px;
+    color: #737b8d;
+}
+
+.green-text {
+    color: #19b85a;
+}
+
+
+/* ================= LOWER AREA ================= */
+
+.dashboard-grid {
+    margin-top: 27px;
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(320px, 0.88fr);
+    gap: 21px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #e1e3e9;
+    border-radius: 16px;
+}
+
+
+/* ================= PRODUCTIVITY ================= */
+
+.productivity-card {
+    height: 456px;
+    padding: 27px 27px 22px;
+}
+
+.productivity-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.productivity-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.productivity-subtitle {
+    margin-top: 5px;
+    color: #747c8e;
+    font-size: 15px;
+}
+
+.week-badge {
+    background: #eee9ff;
+    color: #6d59ec;
+    padding: 9px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 650;
+}
+
+
+/* ================= GRAPH ================= */
+
+.chart {
+    height: 330px;
+    margin-top: 14px;
+    padding: 0 6px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.chart-area {
+    width: 100%;
+    height: 275px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    border-bottom: 1px solid #e1e3e9;
+}
+
+.chart-column {
+    height: 100%;
+    width: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.percentage {
+    font-size: 12px;
+    color: #7b8292;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.bar-wrapper {
+    height: 220px;
+    width: 54px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.bar {
+    width: 100%;
+    height: 0;
+    border-radius: 9px 9px 0 0;
+    background: linear-gradient(
+        to top,
+        #6f55e8,
+        #8069f3
+    );
+    transition: height 0.7s ease;
+}
+
+.day {
+    margin-top: 12px;
+    font-size: 13px;
+    color: #737b8d;
+    font-weight: 500;
+}
+
+
+/* ================= SMART INSIGHT ================= */
+
+.insight-card {
+    height: 456px;
+    padding: 27px;
+    background: linear-gradient(
+        145deg,
+        #3f2b8e,
+        #4c2091
+    );
+    color: white;
+    border: none;
+    position: relative;
+}
+
+.insight-icon {
+    width: 49px;
+    height: 49px;
+    border-radius: 13px;
+    background: rgba(255,255,255,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+}
+
+.insight-title {
+    position: absolute;
+    top: 34px;
+    left: 89px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.insight-small {
+    position: absolute;
+    top: 55px;
+    left: 89px;
+    font-size: 13px;
+    color: #c9c2e9;
+}
+
+.insight-content {
+    margin-top: 42px;
+}
+
+.insight-content h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+.insight-content p {
+    max-width: 400px;
+    font-size: 15px;
+    line-height: 1.65;
+    color: #d2cdea;
+}
+
+.insight-line {
+    position: absolute;
+    left: 27px;
+    right: 27px;
+    bottom: 88px;
+    height: 1px;
+    background: rgba(255,255,255,0.16);
+}
+
+.insight-footer {
+    position: absolute;
+    left: 27px;
+    bottom: 54px;
+    font-size: 13px;
+    color: #d2cbea;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1200px) {
+
+    .sidebar {
+        width: 245px;
+    }
+
+    .main {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .welcome h1 {
+        font-size: 34px;
+    }
+
+    .stats {
+        gap: 14px;
+    }
+
+    .stat-card {
+        padding: 20px 16px;
+    }
+}
+
+
+@media (max-width: 950px) {
+
+    .sidebar {
+        width: 210px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .main {
+        padding: 0 18px 30px;
+    }
+
+    .topbar {
+        height: 75px;
+    }
+
+    .welcome {
+        margin-top: 28px;
+        display: block;
+    }
+
+    .welcome h1 {
+        font-size: 29px;
+    }
+
+    .add-btn {
+        margin-top: 20px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .productivity-card,
+    .insight-card {
+        height: auto;
+        min-height: 450px;
+    }
+
+    .bar-wrapper {
+        width: 38px;
+    }
+}

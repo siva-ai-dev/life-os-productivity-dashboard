@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeOS Dashboard</title>
+    <link rel="stylesheet" href="../index.html/style.css/style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-box">L</div>
+            <div class="logo-text">LifeOS</div>
+        </div>
+
+        <nav class="nav">
+
+            <div class="nav-item active">
+                <span class="nav-icon">⌂</span>
+                <span>Dashboard</span>
+            </div>
+
+            <div class="nav-item">
+                <span class="nav-icon">◷</span>
+                <span>Activities</span>
+            </div>
+
+            <div class="nav-item">
+                <span class="nav-icon">◒</span>
+                <span>Analytics</span>
+            </div>
+
+            <div class="nav-item">
+                <span class="nav-icon">◎</span>
+                <span>Goals</span>
+            </div>
+
+            <div class="nav-item">
+                <span class="nav-icon">◉</span>
+                <span>Focus Mode</span>
+            </div>
+
+        </nav>
+
+        <div class="dark-mode">
+            <span>☾</span>
+            <span>Dark Mode</span>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- TOP BAR -->
+        <div class="topbar">
+
+            <div class="profile">
+
+                <div class="notification">
+                    🔔
+                </div>
+
+                <div class="avatar">
+                    A
+                </div>
+
+                <div>
+                    <div class="profile-name">
+                        SIVA NAGENDRA
+                    </div>
+
+                    <div class="profile-role">
+                        Developer
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- WELCOME -->
+        <section class="welcome">
+
+            <div>
+
+                <div class="date" id="currentDate"></div>
+
+                <h1>
+                    Good morning, Siva Nagendra 
+                </h1>
+
+                <div class="subtitle">
+                    Let's make today productive.
+                </div>
+
+            </div>
+
+            <button class="add-btn">
+                + Add Activity
+            </button>
+
+        </section>
+
+
+        <!-- STAT CARDS -->
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <div class="stat-icon purple-icon">
+                    ⚡
+                </div>
+
+                <div>
+                    <div class="stat-label">
+                        Productivity Score
+                    </div>
+
+                    <div class="stat-value">
+                        99
+                    </div>
+
+                    <div class="stat-bottom green-text">
+                        +12% this week
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon blue-icon">
+                    ◷
+                </div>
+
+                <div>
+                    <div class="stat-label">
+                        Focus Time
+                    </div>
+
+                    <div class="stat-value">
+                        9hr
+                    </div>
+
+                    <div class="stat-bottom">
+                        Today
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon green-icon">
+                    ✓
+                </div>
+
+                <div>
+                    <div class="stat-label">
+                        Activities
+                    </div>
+
+                    <div class="stat-value">
+                        88
+                    </div>
+
+                    <div class="stat-bottom">
+                        Activities tracked
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon orange-icon">
+                    🎯
+                </div>
+
+                <div>
+                    <div class="stat-label">
+                        Goals
+                    </div>
+
+                    <div class="stat-value">
+                        85%
+                    </div>
+
+                    <div class="stat-bottom">
+                        This week
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRODUCTIVITY + INSIGHT -->
+        <section class="dashboard-grid">
+
+
+            <!-- PRODUCTIVITY OVERVIEW -->
+            <div class="card productivity-card">
+
+                <div class="productivity-header">
+
+                    <div>
+                        <div class="productivity-title">
+                            Productivity Overview
+                        </div>
+
+                        <div class="productivity-subtitle">
+                            Monday - Saturday
+                        </div>
+                    </div>
+
+                    <div class="week-badge">
+                        This Week
+                    </div>
+
+                </div>
+
+
+                <div class="chart">
+
+                    <div class="chart-area">
+
+                        <!-- MONDAY -->
+                        <div class="chart-column">
+
+                            <div class="percentage">67%</div>
+
+                            <div class="bar-wrapper">
+                                <div class="bar" data-value="67"></div>
+                            </div>
+
+                            <div class="day">Mon</div>
+
+                        </div>
+
+
+                        <!-- TUESDAY -->
+                        <div class="chart-column">
+
+                            <div class="percentage">77%</div>
+
+                            <div class="bar-wrapper">
+                                <div class="bar" data-value="77"></div>
+                            </div>
+
+                            <div class="day">Tue</div>
+
+                        </div>
+
+
+                        <!-- WEDNESDAY -->
+                        <div class="chart-column">
+
+                            <div class="percentage">56%</div>
+
+                            <div class="bar-wrapper">
+                                <div class="bar" data-value="56"></div>
+                            </div>
+
+                            <div class="day">Wed</div>
+
+                        </div>
+
+
+                        <!-- THURSDAY -->
+                        <div class="chart-column">
+
+                            <div class="percentage">88%</div>
+
+                            <div class="bar-wrapper">
+                                <div class="bar" data-value="88"></div>
+                            </div>
+
+                            <div class="day">Thu</div>
+
+                        </div>
+
+
+                        <!-- FRIDAY -->
+                        <div class="chart-column">
+
+                            <div class="percentage">45%</div>
+
+                            <div class="bar-wrapper">
+                                <div class="bar" data-value="45"></div>
+                            </div>
+
+                            <div class="day">Fri</div>
+
+                        </div>
+
+
+                        <!-- SATURDAY -->
+                        <div class="chart-column">
+
+                            <div class="percentage">100%</div>
+
+                            <div class="bar-wrapper">
+                                <div class="bar" data-value="100"></div>
+                            </div>
+
+                            <div class="day">Sat</div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SMART INSIGHT -->
+            <div class="card insight-card">
+
+                <div class="insight-icon">
+                    ✦
+                </div>
+
+                <div class="insight-title">
+                    Smart Insight
+                </div>
+
+                <div class="insight-small">
+                    Based on your activity
+                </div>
+
+                <div class="insight-content">
+
+                    <h2>
+                        Your day is ready.
+                    </h2>
+
+                    <p>
+                        Start tracking activities to receive
+                        personalized productivity insights.
+                    </p>
+
+                </div>
+
+                <div class="insight-line"></div>
+
+                <div class="insight-footer">
+                    ✦ LifeOS Intelligence
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../index.html/script.js/script.js"></script>
+
+</body>
+</html>
