@@ -53,6 +53,9 @@ Currently, I'm expanding my skills in **Agentic AI and Generative AI**, explorin
 
 ## 🌟 Featured Project
 
+## Live Demo
+ https://siva-ai-dev.github.io/life-os-productivity-dashboard/
+
 ### 🧠 Life OS
 
 **Life OS** is a productivity-focused web application designed to help users organize and manage different aspects of their daily life.
